@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Gastronómico - Wara Wara Tours</title>
+  <link rel="stylesheet" href="../styles/global.css">
+  <script defer src="../main.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Font Awesome (iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AOS CSS para animaciones -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    /* Estilos para los carruseles de cards de menú */
+    .menu-card {
+      max-width: 300px;
+      margin: auto;
+    }
+    .menu-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar se carga dinámicamente -->
+  <div id="navbar"></div>
+
+  <main class="container my-5">
+    <!-- Encabezado de la página -->
+    <header class="text-center mb-5" data-aos="fade-up">
+      <h1>Menú Gastronómico</h1>
+      <p class="lead">
+        Descubre sabores auténticos y tradicionales que, al prepararse con métodos ancestrales, benefician a las comunidades locales.
+      </p>
+    </header>
+
+    <!-- Sección 1: Menú Tradicional Paceño -->
+    <section class="mb-5" data-aos="fade-up">
+      <h2 class="mb-4">Menú Tradicional Paceño</h2>
+      <p class="mb-4">
+        Sumérgete en la esencia de la cocina paceña. Cada plato se elabora siguiendo técnicas tradicionales y se prepara en colaboración con familias locales, generando empleo y preservando la cultura.
+      </p>
+      <!-- Carrusel de Cards para el Menú Tradicional -->
+      <div id="carouselMenu1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Card 1 -->
+          <div class="carousel-item active">
+            <div class="card menu-card border-0">
+              <img src="/assets/card1.jpg" class="card-img-top" alt="Sopa de Maní">
+              <div class="card-body">
+                <h5 class="card-title">Sopa de Maní</h5>
+                <p class="card-text">
+                  Elaborada con maní, carne y verduras siguiendo recetas tradicionales. Su preparación involucra a productores locales, fortaleciendo la economía comunitaria.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="carousel-item">
+            <div class="card menu-card border-0">
+              <img src="/assets/banner6.jpg" class="card-img-top" alt="Chairo">
+              <div class="card-body">
+                <h5 class="card-title">Fricase</h5>
+                <p class="card-text">
+                  Guiso típico con carne, papas, chuño y verduras. Se prepara con insumos locales y técnicas ancestrales que apoyan a las familias de la región.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="carousel-item">
+            <div class="card menu-card border-0">
+              <img src="/assets/img8.jpg" class="card-img-top" alt="Sopa de Quinua">
+              <div class="card-body">
+                <h5 class="card-title">Asado con Quinua</h5>
+                <p class="card-text">
+                  Una opción nutritiva y reconfortante, donde la quinua se cultiva y se procesa localmente, garantizando un impacto positivo en la comunidad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenu1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Sección 2: Menú Cultural Andino -->
+    <section class="mb-5" data-aos="fade-up" data-aos-delay="100">
+      <h2 class="mb-4">Menú Cultural Andino</h2>
+      <p class="mb-4">
+        Este menú celebra la fusión de la tradición andina con técnicas modernas. Cada plato se elabora en conjunto con comunidades locales, promoviendo la sostenibilidad y el desarrollo cultural.
+      </p>
+      <!-- Carrusel de Cards para el Menú Cultural Andino -->
+      <div id="carouselMenu2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Card 1 -->
+          <div class="carousel-item active">
+            <div class="card menu-card border-0">
+              <img src="/assets/img13.jpg" class="card-img-top" alt="Charque de Llama">
+              <div class="card-body">
+                <h5 class="card-title">Charque de Llama</h5>
+                <p class="card-text">
+                  Plato emblemático preparado con carne de llama y técnicas tradicionales, involucrando a las familias locales que aportan ingredientes de calidad.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="carousel-item">
+            <div class="card menu-card border-0">
+              <img src="/assets/img13.jpg" class="card-img-top" alt="Pique Macho Andino">
+              <div class="card-body">
+                <h5 class="card-title">Plato paseño Andino</h5>
+                <p class="card-text">
+                  Una reinterpretación andina de un clásico, en el que cada preparación es realizada por cocineros locales comprometidos con el desarrollo social.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="carousel-item">
+            <div class="card menu-card border-0">
+              <img src="/assets/img9.jpg" class="card-img-top" alt="Tostones de Quinua">
+              <div class="card-body">
+                <h5 class="card-title">Humintas de Quinua</h5>
+                <p class="card-text">
+                  Innovador y saludable, este plato fusiona la quinua ancestral con un toque moderno, beneficiando a las comunidades que cultivan este ingrediente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenu2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer se carga dinámicamente -->
+  <div id="footer"></div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Inicializar AOS -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'slide'
+    });
+  </script>
+</body>
+</html>

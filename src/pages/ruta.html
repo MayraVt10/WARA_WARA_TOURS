@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutas de Viaje - Wara Wara Tours</title>
+  <link rel="stylesheet" href="../styles/global.css">
+  <script defer src="../main.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Font Awesome (iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AOS CSS para animaciones -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    /* Timeline Container */
+    .timeline {
+      position: relative;
+      padding: 2rem 0;
+      list-style: none;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #ddd;
+      transform: translateX(-50%);
+    }
+    /* Timeline Item */
+    .timeline-item {
+      position: relative;
+      margin: 2rem 0;
+      width: 45%;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      top: 1.5rem;
+      width: 20px;
+      height: 20px;
+      background: #6096B4;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 0 0 2px #6096B4;
+    }
+    /* Left Items */
+    .timeline-item.left {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-item.left::after {
+      right: -10px;
+    }
+    /* Right Items */
+    .timeline-item.right {
+      left: 55%;
+      text-align: left;
+    }
+    .timeline-item.right::after {
+      left: -10px;
+    }
+    .timeline-item h4 {
+      margin-top: 0;
+      font-weight: bold;
+    }
+    .timeline-item p {
+      margin-bottom: 0.5rem;
+    }
+    .timeline-item .time {
+      font-size: 0.85rem;
+      color: #666;
+    }
+    /* Estilos para el carrusel de vistas */
+    #viewCarousel img {
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar se carga dinámicamente -->
+  <div id="navbar"></div>
+
+  <main class="container my-5">
+    <!-- Encabezado -->
+    <header class="text-center mb-5" data-aos="fade-up">
+      <h1>Rutas de Viaje</h1>
+      <p class="lead">Explora nuestra ruta de altura: una experiencia única en La Paz</p>
+    </header>
+
+    <!-- Línea de tiempo (timeline) -->
+    <ul class="timeline">
+      <!-- Item 1: UCB - La Cumbre -->
+      <li class="timeline-item left" data-aos="fade-up">
+        <h4>UCB - La Cumbre</h4>
+        <p>Salida desde la Universidad Católica Boliviana "San Pablo" hacia La Cumbre.</p>
+        <p class="time"><strong>Tiempo:</strong> 30 min</p>
+        <p><strong>Degustación:</strong> Pausa para saborear un plato típico en ruta.</p>
+      </li>
+      <!-- Item 2: La Cumbre - Pampalarama -->
+      <li class="timeline-item right" data-aos="fade-up" data-aos-delay="100">
+        <h4>La Cumbre - Pampalarama</h4>
+        <p>Continuamos hacia Pampalarama, apreciando la transición entre los valles y el altiplano.</p>
+        <p class="time"><strong>Tiempo:</strong> 45 min</p>
+        <p><strong>Degustación:</strong> Parada para disfrutar de especialidades locales.</p>
+      </li>
+      <!-- Item 3: Pampalarama - C. Chacaltaya -->
+      <li class="timeline-item left" data-aos="fade-up" data-aos-delay="200">
+        <h4>Pampalarama - C. Chacaltaya</h4>
+        <p>Visita a la Comunidad de Chacaltaya, un punto emblemático para conocer la vida local.</p>
+        <p class="time"><strong>Tiempo:</strong> 40 min</p>
+        <p><strong>Degustación:</strong> Degustación de platos tradicionales y encuentro comunitario.</p>
+      </li>
+      <!-- Item 4: C. Chacaltaya - Siete Lagunas -->
+      <li class="timeline-item right" data-aos="fade-up" data-aos-delay="300">
+        <h4>C. Chacaltaya - Siete Lagunas</h4>
+        <p>El recorrido continúa hacia Siete Lagunas, un ecosistema natural impresionante.</p>
+        <p class="time"><strong>Tiempo:</strong> 50 min</p>
+        <p><strong>Degustación:</strong> Pausa para saborear una preparación regional mientras disfrutas del paisaje.</p>
+      </li>
+      <!-- Item 5: Siete Lagunas - C. 7 Lagunas -->
+      <li class="timeline-item left" data-aos="fade-up" data-aos-delay="400">
+        <h4>Siete Lagunas - C. 7 Lagunas</h4>
+        <p>Trayecto hacia la Comunidad 7 Lagunas, donde la naturaleza y la tradición se fusionan.</p>
+        <p class="time"><strong>Tiempo:</strong> 35 min</p>
+        <p><strong>Degustación:</strong> Descanso para disfrutar de un exquisito plato local.</p>
+      </li>
+      <!-- Item 6: C. 7 Lagunas - UCB -->
+      <li class="timeline-item right" data-aos="fade-up" data-aos-delay="500">
+        <h4>C. 7 Lagunas - UCB</h4>
+        <p>El viaje culmina regresando a la UCB, completando una ruta llena de experiencias inolvidables.</p>
+        <p class="time"><strong>Tiempo:</strong> 40 min</p>
+        <p><strong>Degustación:</strong> Última pausa para un plato tradicional y reflexión final.</p>
+      </li>
+    </ul>
+
+    <!-- Nueva sección: Galería de Vistas (Carrusel Pequeño) -->
+    <section class="my-5" data-aos="fade-up">
+      <h2 class="text-center mb-4">Galería de Vistas</h2>
+      <div id="viewCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/cumbre.jpg" class="d-block w-100" alt="Vista 1">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/pampalarama.jpg" class="d-block w-100" alt="Vista 2">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/pampalarama2.jpg" class="d-block w-100" alt="Vista 3">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/pampalarama3.jpg" class="d-block w-100" alt="Vista 3">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/chacaltaya.jpg" class="d-block w-100" alt="Vista 3">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/chacaltaya2.jpg" class="d-block w-100" alt="Vista 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#viewCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#viewCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Sección de resumen y llamada a la acción -->
+    <section class="text-center my-5" data-aos="fade-up">
+      <h2>¡Vive la Experiencia!</h2>
+      <p>Reserva tu lugar y descubre una ruta única que combina cultura, gastronomía y compromiso social.</p>
+      <a href="reservas.html" class="btn btn-primary btn-lg">Reserva Ahora</a>
+    </section>
+  </main>
+
+  <!-- Footer se carga dinámicamente -->
+  <div id="footer"></div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Inicializar AOS -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'slide'
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Wara Wara Tours</title>
+  <link rel="stylesheet" href="../styles/global.css">
+  <script defer src="../main.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Font Awesome (iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Opcional: Animaciones de Scroll (AOS) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+  <!-- Navbar se carga dinámicamente -->
+  <div id="navbar"></div>
+
+  <main>
+    <!-- Banner interactivo con carrusel -->
+    <section id="banner">
+        <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Imagen 1: Gastronomía local -->
+            <div class="carousel-item active">
+              <img src="/assets/banner1.jpg" class="d-block w-100" alt="Gastronomía local">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Sabores Auténticos</h2>
+                <p>Descubre la riqueza gastronómica de La Paz.</p>
+              </div>
+            </div>
+            <!-- Imagen 2: Voluntariado -->
+            <div class="carousel-item">
+              <img src="/assets/banner2.jpg" class="d-block w-100" alt="Voluntariado">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Compromiso Social</h2>
+                <p>Vive experiencias que transforman comunidades.</p>
+              </div>
+            </div>
+            <!-- Imagen 3: Rutas Turísticas -->
+            <div class="carousel-item">
+              <img src="/assets/banner5.jpg" class="d-block w-100" alt="Rutas turísticas">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Aventuras Únicas</h2>
+                <p>Explora destinos emblemáticos y secretos.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Controles del carrusel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+          <!-- Overlay del título -->
+          <div class="carousel-title-overlay">
+            <h1>WARA WARA TOURS</h1>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Sección "Quiénes Somos" y "Qué Hacemos" -->
+    <section id="about" class="my-5 container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>¿Quiénes Somos?</h2>
+          <p>
+            Wara Wara Tours es un emprendimiento de turismo sostenible con un enfoque social, desarrollado por estudiantes universitarios comprometidos con la innovación y el desarrollo comunitario en La Paz. Nuestra misión es diseñar experiencias turísticas diferenciadas, integrales y sostenibles, resaltando el patrimonio cultural, histórico y gastronómico de cada destino.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h2>¿Qué Hacemos?</h2>
+          <p>
+            Diseñamos y operamos rutas turísticas personalizadas, combinando visitas a sitios emblemáticos y destinos menos explorados de La Paz. Nuestra propuesta de valor incluye la integración de experiencias gastronómicas autóctonas, en colaboración con residentes locales capacitados para ofrecer productos y servicios de calidad, generando empleo directo y promoviendo el desarrollo socioeconómico.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección "Lo Más Destacado" -->
+    <section id="highlights" class="my-5 container" data-aos="fade-up">
+      <h2 class="text-center mb-4">Lo Más Destacado</h2>
+      <div class="row">
+        <!-- Tarjeta 1: Plato Popular -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="/assets/card1.jpg" class="card-img-top" alt="Plato Popular">
+            <div class="card-body">
+              <h5 class="card-title">Plato Popular</h5>
+              <p class="card-text">Degusta los sabores más representativos de la cocina local.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 2: Ruta Recomendada -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="/assets/img4.jpg" class="card-img-top" alt="Ruta Recomendada">
+            <div class="card-body">
+              <h5 class="card-title">Ruta Recomendada</h5>
+              <p class="card-text">Recorre los caminos que te llevarán a descubrir lugares únicos.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 3: Experiencia de Clientes -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="/assets/img3.jpg" class="card-img-top" alt="Experiencia de Clientes">
+            <div class="card-body">
+              <h5 class="card-title">Experiencias Reales</h5>
+              <p class="card-text">Lee los testimonios de quienes ya vivieron esta experiencia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonials" class="my-5 container" data-aos="fade-up">
+      <h2 class="text-center mb-4">Testimonios</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"Una experiencia transformadora. La combinación de cultura, gastronomía y compromiso social es única."</p>
+            <footer class="blockquote-footer">Cliente Satisfecho</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"Cada ruta es una aventura llena de historia y sabor. Recomiendo Wara Wara Tours sin dudar."</p>
+            <footer class="blockquote-footer">Turista Feliz</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"El compromiso social de esta empresa me hizo sentir parte de algo más grande. Una vivencia inolvidable."</p>
+            <footer class="blockquote-footer">Visitante Entusiasmado</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Botón "Reserva Ahora" -->
+    <section id="call-to-action" class="text-center my-5" data-aos="fade-up">
+      <a href="reservas.html" class="btn btn-primary btn-lg">Reserva Ahora</a>
+    </section>
+  </main>
+
+  <!-- Footer se carga dinámicamente -->
+  <div id="footer"></div>
+
+  <!-- Bootstrap JS (necesario para el carrusel y otros componentes) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Inicializar animaciones de AOS -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'slide'
+    });
+  </script>
+</body>
+</html>

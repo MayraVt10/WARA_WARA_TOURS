@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Wara Wara Tours</title>
+  <link rel="stylesheet" href="../styles/global.css">
+  <script defer src="../main.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    /* Estilos para los cards circulares */
+    .circle-card {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      text-align: center;
+      padding: 10px;
+      margin: auto;
+    }
+    .circle-card:hover {
+      transform: scale(1.05);
+    }
+    .circle-card img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .circle-card h5 {
+      font-family: 'Georgia', serif;
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      color: #4A4A4A;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar se carga dinámicamente -->
+  <div id="navbar"></div>
+  
+  <main class="container my-5">
+    <!-- Encabezado -->
+    <header class="text-center mb-5" data-aos="fade-up">
+      <h1>Nosotros</h1>
+      <p class="lead">Descubre la esencia de Wara Wara Tours: innovación, compromiso social y pasión por el turismo sostenible.</p>
+    </header>
+
+    <!-- Sección de Elementos Alternados -->
+    <section class="features">
+      <!-- Elemento 1: Card a la izquierda, descripción a la derecha -->
+      <div class="row align-items-center mb-5" data-aos="fade-up">
+        <div class="col-md-6 order-md-1 text-center">
+          <div class="circle-card">
+            <img src="/assets/bus_exterior.jpg" alt="Bus Exterior">
+            <h5>Bus Exterior</h5>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-2">
+          <p>
+            Nuestro bus personalizado destaca por su diseño exterior impresionante, preparado con tecnología y confort. Su operación involucra a familias locales, fortaleciendo el compromiso social y cultural de la empresa.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Elemento 2: Descripción a la izquierda, card a la derecha -->
+      <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-6 order-md-1">
+          <p>
+            El interior del bus fusiona modernidad y tradición, ofreciendo un ambiente cómodo e interactivo. Este espacio es diseñado con el aporte de expertos locales, resaltando el patrimonio paceño.
+          </p>
+        </div>
+        <div class="col-md-6 order-md-2 text-center">
+          <div class="circle-card">
+            <img src="/assets/bus2.png" alt="Bus Interior">
+            <h5>Bus Interior</h5>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Elemento 3: Card a la izquierda, descripción a la derecha -->
+      <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-md-6 order-md-1 text-center">
+          <div class="circle-card">
+            <img src="/assets/empaque1.jpg" alt="Empaques de Comida">
+            <h5>Empaques Comida</h5>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-2">
+          <p>
+            Nuestros empaques para comida, personalizados con identidad local, aseguran la frescura y el sabor de cada plato. Su elaboración involucra a artesanos locales, promoviendo el desarrollo comunitario.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Elemento 4: Descripción a la izquierda, card a la derecha -->
+      <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-md-6 order-md-1">
+          <p>
+            Los empaques para souvenirs combinan elegancia y tradición, convirtiendo cada regalo en una pieza única. Este proceso creativo apoya a familias locales y celebra la cultura de cada destino.
+          </p>
+        </div>
+        <div class="col-md-6 order-md-2 text-center">
+          <div class="circle-card">
+            <img src="/assets/empaque2.jpg" alt="Empaques de Souvenirs">
+            <h5>Souvenirs</h5>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Elemento 5: Card a la izquierda, descripción a la derecha -->
+      <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="400">
+        <div class="col-md-6 order-md-1 text-center">
+          <div class="circle-card">
+            <img src="/assets/mandil.jpg" alt="Uniformes">
+            <h5>Uniformes</h5>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-2">
+          <p>
+            Nuestros uniformes corporativos reflejan el espíritu y la identidad de Wara Wara Tours. Combinan diseño, comodidad y profesionalismo, ofreciendo una imagen coherente en cada recorrido.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Elemento 6: Descripción a la izquierda, card a la derecha -->
+      <div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="500">
+        <div class="col-md-6 order-md-1">
+          <p>
+            Finalmente, nuestros establecimientos locales están estratégicamente ubicados para almacenar insumos y preparar alimentos, garantizando calidad y fortaleciendo la economía local.
+          </p>
+        </div>
+        <div class="col-md-6 order-md-2 text-center">
+          <div class="circle-card">
+            <img src="/assets/img14.jpg" alt="Establecimientos">
+            <h5>Establecimientos</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer se carga dinámicamente -->
+  <div id="footer"></div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Inicializar AOS -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'slide'
+    });
+  </script>
+</body>
+</html>

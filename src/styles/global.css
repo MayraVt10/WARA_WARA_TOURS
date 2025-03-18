@@ -1,0 +1,197 @@
+/* Ajustes generales de la página */
+body {
+    font-family: 'Georgia', serif;  /* Fuente elegante */
+    margin: 0;
+    padding: 0;
+    background-color: #F5E1DA;  /* Tono nude/beige */
+  }
+  
+  /* ----- Navbar ----- */
+  .navbar {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* Fondo blanco transparente */
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid #D8B4A0;  /* Borde beige */
+    border-radius: 2rem;        /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Logo a la izquierda y enlaces centrados */
+    
+    width: 90%;      /* Ocupa el 90% del ancho de la pantalla */
+    max-width: 800px; /* Ancho máximo para elegancia */
+    padding: 0.5rem 1.5rem;
+    z-index: 1000;
+  }
+  
+  /* Logo: mayor tamaño y sin forzar forma (sin border-radius) */
+  .navbar-logo img {
+    width: 100px;  /* Aumenta el tamaño */
+    height: auto;
+  }
+  
+  /* Lista de enlaces */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;       /* Espaciado reducido */
+    margin: 0;
+    padding: 0;
+    align-items: center;  /* Centrado vertical */
+  }
+  
+  /* Estilo de cada enlace */
+  .navbar-links a {
+    text-decoration: none;
+    color: #4A4A4A;         /* Plomo / gris oscuro */
+    font-weight: 600;
+    font-size: 0.8rem;      /* Tamaño más pequeño */
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover: cambia a azul acre */
+  .navbar-links a:hover {
+    color: #601d23; /* Azul acre */
+  }
+  
+  /* ----- Responsividad ----- */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0.5rem 1rem;
+      gap: 1rem;
+    }
+    .navbar-links {
+      gap: 0.75rem;
+    }
+    .navbar-links a {
+      font-size: 0.75rem;
+    }
+  }
+/* ----- Footer ----- */
+.footer {
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(245,225,218,0.8) 100%);
+    padding: 2rem 1rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .footer-links,
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .footer-links a,
+  .footer-social a {
+    text-decoration: none;
+    color: #4A4A4A;  /* Plomo */
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #6096B4;  /* Azul acre */
+  }
+  
+  .footer-social a:hover {
+    color: #A52A2A;  /* Guindo */
+  }
+  .footer-nav a {
+    color: #4A4A4A !important;      /* Color plomo */
+    font-family: Georgia, serif;    /* Fuente elegante */
+    font-size: 0.75rem;             /* Tamaño más pequeño */
+  }
+  
+  
+  /* Sección extra del footer: Carrusel y botón */
+  .footer-extra {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  /* ----- Botón "Volver a Arriba" ----- */
+  #back-to-top {
+    background-color: #6096B4;  /* Azul acre */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease;
+  }
+  
+  #back-to-top:hover {
+    opacity: 0.8;
+  }
+  
+  .footer-bottom {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #4A4A4A;
+  }
+  /* Ajustes opcionales para las imágenes circulares */
+.circle-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .circle-image-big img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  /* Ajustar el tamaño del carrusel */
+#bannerCarousel .carousel-item img {
+    height: 400px;        /* Altura más pequeña */
+    object-fit: cover;
+}
+
+/* Estilo para el overlay del título */
+.carousel-title-overlay {
+    position: absolute;
+    top: 50%;            /* Centrado vertical */
+    right: 5%;           /* A la derecha, con margen del 5% */
+    transform: translateY(-50%);
+    text-align: center;
+    color: #FFFFFF;      /* Blanco para buen contraste */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Georgia', serif;  /* Fuente elegante */
+}
+
+/* Ajuste del tamaño de la fuente para el título */
+.carousel-title-overlay h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
